@@ -3,7 +3,7 @@
 #include "console.h"
 #include <QProcess>
 #include <QFileDialog>
-#include <myprocess.h>
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
