@@ -22,8 +22,8 @@ void MainWindow::on_pushButton_clicked()
 
     QString dlLink = ui->lineEdit->text();
     QString path   = ui->lineEdit_2->text();
-//    QString command = "aria2c -d "+ path + " " +dlLink + " | grep  "+dlLink;
-    QString command = "wget -O "+ path +"/a.rar "+ " " +dlLink +" | grep %";
+    QString command = "aria2c -d "+ path + " " +dlLink ;
+//    QString command = "wget -O "+ path +"/a.rar "+ " " +dlLink +" | grep %";
     Console::log(command);
 
     q->setProcessChannelMode(QProcess::MergedChannels);
